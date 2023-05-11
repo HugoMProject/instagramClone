@@ -1,6 +1,6 @@
 # InstagramClone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Este proyecto es una copia de instagram, es realizado con fines practicos, este proyecto no a ser utilizado con el fin de conseguir remuneracion de la misma.
 
 ## Development server
 
