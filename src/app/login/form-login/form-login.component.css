@@ -1,0 +1,252 @@
+@import url('https://fonts.cdnfonts.com/css/billabong');              
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-principal-blanco:rgb(253, 254, 254);
+    --color-secundario-turquesa:rgb(0, 132, 255);
+    --color-terciario-azul:rgb(0, 0, 255);
+    --color-cuarto-gris:rgb(227, 231, 231);
+}
+.contains{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 25px;
+}
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--color-principal-blanco);
+}
+    .bannerSon{
+        width: 300px;
+        height: 530px;
+        overflow: hidden;
+        
+    }
+    .phonewhite{
+        position: absolute;
+        width: 260px;
+        left: 45%;
+        top: 7%;
+        border-radius: 40px;
+
+    }
+
+    .phonewhite .imgFondo{
+        position: absolute;
+        top: -33px;
+        left: -522px;
+        width: 902px;
+        height: 606px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -2;
+        mix-blend-mode: color-dodge;
+
+    }
+
+    .phoneblack{
+        position: absolute;
+        left: 60%;
+        top: 9%;
+        z-index: 0;
+        border-radius: 38px;
+
+    }
+    .phoneblack .imgFondo{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        left: -6px;
+        top: 4px;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+        animation-fill-mode: both;
+        animation-duration: 10s;
+        background-color: black;
+
+    }
+    .phoneblack .img-intagram-1{
+        opacity: 1;
+        height: 530px;
+        animation-name: img-intagram-1;
+    }
+    .phoneblack .img-intagram-2{
+        opacity: 1;
+        height: 530px;
+        animation-name: img-intagram-2;
+    }
+    .phoneblack .img-intagram-3{
+        opacity: 1;
+        height: 530px;
+        animation-name: img-intagram-3;
+    }
+    @keyframes img-intagram-1 {
+        0%{
+            transition: 2s;
+            opacity: 100%;
+        }
+        30%{
+            transition: 2s;
+            opacity: 100%;
+        }
+        60%{
+            opacity: 30%;
+        }
+        100%{
+            opacity:0%;
+        }
+    }
+    @keyframes img-intagram-2 {
+        0%{
+            opacity: 0%;
+        }
+        30%{
+            opacity: 0%;
+        }
+        60%{
+            transition: 2s;
+            opacity: 100%;
+        }
+        100%{
+            opacity:30%;
+        }
+    }
+    @keyframes img-intagram-3 {
+        0%{
+            opacity: 30%;
+        }
+        30%{
+            opacity: 0%;
+        }
+        60%{
+            
+            opacity: 0%;
+        }
+        100%{
+            transition: 2s;
+            opacity:100%;
+        }
+    }
+
+/******************************* seccion del formulario ********************************************/
+.containsForm{
+    position: relative;
+    width: 100%;
+}
+.containsForm form{
+    border: 1.5px solid rgb(227, 231, 231);
+    padding: 10px ;
+    position: relative;
+    top: 8%;
+    width: 350px;
+    height: 380px;
+    background-color: var(--color-cuarto-gris);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
+}
+.containsForm form h1{
+    position: relative;
+    top: 35px;
+    font-family: 'Billabong', sans-serif;                                             
+    font-size: 55px;
+    text-align: center;
+}
+.containsForm form main{
+    position: relative;
+    top: 35px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.containsForm form main input{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1.5px solid rgb(227, 231, 231);
+    background-color: ghostwhite;
+}
+.containsForm form main button{
+    color: rgb(253, 254, 254);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    top: 8px;
+    left: 10%;
+    width: 80%;
+    height: 35px;
+    border-radius: 3px;
+    background-color: rgb(0, 175, 255);
+    border: 1px solid transparent;
+}
+.containsForm form main span{
+    width: 35%;
+    height: 1px;
+    background-color: rgb(227, 231, 231);
+}
+.containsForm form main .lineleft{
+    position: relative;
+    left: 10%;
+    top: 25.8px;
+}
+
+.containsForm form main .lineright{
+    position: relative;
+    top: 20px;
+    right: -55%;
+}
+.containsForm form main .lineright::before{
+    content: 'O';
+    position: absolute;
+    left: -20%;
+    bottom: -10px;
+    color: rgb(179, 180, 180);
+}
+.containsForm form .links{
+    position: relative;
+    top: 35px;
+    left: 15%;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.containsForm .register{
+    position: relative;
+    top: 40px;
+    width: 350px;
+    padding: 10px;
+    height: 40px;
+    border: 1.5px solid rgb(227, 231, 231);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.containsForm .app{
+    position: relative;
+    top: 40px;
+    width: 350px;
+    padding: 10px;
+    height: 50px;
+}
