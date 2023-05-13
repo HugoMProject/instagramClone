@@ -3,48 +3,41 @@
     margin: 0;
     padding: 0;
 }
-:root{
-    --color-principal-blanco:rgb(253, 254, 254);
-    --color-secundario-turquesa:rgb(0, 132, 255);
-    --color-terciario-azul:rgb(0, 0, 255);
-    --color-cuarto-gris:rgb(227, 231, 231);
-}
 .contains{
     position: relative;
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gap: 25px;
+    gap: 35px;
 }
 .banner{
     position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: var(--color-principal-blanco);
 }
     .bannerSon{
         width: 300px;
-        height: 530px;
+        height: 560px;
         overflow: hidden;
         
     }
     .phonewhite{
         position: absolute;
         width: 260px;
-        left: 45%;
-        top: 7%;
+        left: 43%;
+        top: 5%;
         border-radius: 40px;
 
     }
 
     .phonewhite .imgFondo{
         position: absolute;
-        top: -33px;
+        top: -36px;
         left: -522px;
         width: 902px;
-        height: 606px;
+        height: 645px;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -2;
@@ -54,8 +47,8 @@
 
     .phoneblack{
         position: absolute;
-        left: 60%;
-        top: 9%;
+        left: 58%;
+        top: 8%;
         z-index: 0;
         border-radius: 38px;
 
@@ -65,7 +58,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: auto;
-        left: -6px;
+        height: 558px;
+        left: -5px;
         top: 4px;
         animation-iteration-count: infinite;
         animation-direction:alternate;
@@ -76,17 +70,15 @@
     }
     .phoneblack .img-intagram-1{
         opacity: 1;
-        height: 530px;
+
         animation-name: img-intagram-1;
     }
     .phoneblack .img-intagram-2{
         opacity: 1;
-        height: 530px;
         animation-name: img-intagram-2;
     }
     .phoneblack .img-intagram-3{
         opacity: 1;
-        height: 530px;
         animation-name: img-intagram-3;
     }
     @keyframes img-intagram-1 {
@@ -144,82 +136,131 @@
 }
 .containsForm form{
     border: 1.5px solid rgb(227, 231, 231);
-    padding: 10px ;
+    padding: 5px ;
     position: relative;
-    top: 8%;
+    top: 6%;
     width: 350px;
-    height: 380px;
-    background-color: var(--color-cuarto-gris);
+    height: 390px;
+    background-color: #ffff;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 45px;
 }
 .containsForm form h1{
     position: relative;
     top: 35px;
     font-family: 'Billabong', sans-serif;                                             
-    font-size: 55px;
+    font-size: 60px;
     text-align: center;
 }
 .containsForm form main{
+    margin: 0;
     position: relative;
-    top: 35px;
+    top: 25px;
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.containsForm form main input{
+label{
+    width: max-content;
+}
+.containsForm form main .username{
+    position: absolute;
+    color: rgb(115, 115, 115);
+    margin: 0;
+    top: 10px;
+    left: 5px;
+    z-index: 1;
+    display: block;
+    width: 260px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.containsForm form main label:focus-within .username{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    transition: 0.2s;
+    font-size: 10px;
+}
+
+.containsForm form main .password{
+    position: absolute;
+    color: rgb(115, 115, 115);
+    top: 53px;
+    left: 5px;
+    z-index: 1;
+    display: block;
+    width: 260px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.containsForm form main label:focus-within .password{
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    transition: 0.2s;
+    font-size: 10px;
+}
+.containsForm form main label input{
+    padding-left: 2px;
     position: relative;
-    left: 10%;
-    width: 80%;
-    height: 35px;
+    width: 268px;
+    height: 38px;
     border-radius: 2px;
     border: 1.5px solid rgb(227, 231, 231);
-    background-color: ghostwhite;
+    background-color: #fafafa;
+}
+.containsForm form main label input:focus{
+    outline: none;
+    border: 1.5px solid rgb(115,115,115);
 }
 .containsForm form main button{
     color: rgb(253, 254, 254);
     font-size: 15px;
     font-weight: 500;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     top: 8px;
-    left: 10%;
-    width: 80%;
+    width: 270px;
     height: 35px;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: rgb(0, 175, 255);
     border: 1px solid transparent;
 }
-.containsForm form main span{
-    width: 35%;
-    height: 1px;
-    background-color: rgb(227, 231, 231);
-}
 .containsForm form main .lineleft{
     position: relative;
-    left: 10%;
+    left: 0;
     top: 25.8px;
+    width: 40%;
+    height: 1px;
+    background-color: rgb(227, 231, 231);
 }
 
 .containsForm form main .lineright{
     position: relative;
     top: 20px;
-    right: -55%;
+    right: -60%;
+    width: 40%;
+    height: 1px;
+    background-color: rgb(227, 231, 231);
 }
 .containsForm form main .lineright::before{
-    content: 'O';
+    content: 'OR';
     position: absolute;
-    left: -20%;
+    left: -33%;
     bottom: -10px;
-    color: rgb(179, 180, 180);
+    color: rgb(115, 115, 115);
 }
 .containsForm form .links{
     position: relative;
     top: 35px;
-    left: 15%;
     height: 100px;
     width: 250px;
     display: flex;
@@ -228,25 +269,126 @@
     gap: 15px;
 
 }
-
+a{
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.containsForm form .links .forgotPassword{
+    font-size: 11px;
+}
+.containsForm form .links .divfacebook{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.containsForm form .links a{
+    font-weight: 500;
+    color: #385185;
+}
 .containsForm .register{
     position: relative;
-    top: 40px;
+    top: 50px;
     width: 350px;
-    padding: 10px;
-    height: 40px;
+    padding: 5px;
+    height: 50px;
     border: 1.5px solid rgb(227, 231, 231);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2px;
+    gap: 5px;
+}
+.containsForm .register span{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.containsForm .register a {
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .containsForm .app{
     position: relative;
-    top: 40px;
-    width: 350px;
+    top: 60px;
+    width: 320px;
     padding: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+.containsForm .app h4{
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.containsForm .app .box{
+    width: 250;
     height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+.containsForm .app .box .downloand{
+    position: relative;
+    left: 15%;
+    display: flex;
+}
+footer{
+    width: 100%;
+    height: 100px;
+}
+footer .links{
+    position: relative;
+    left: 5%;
+    top: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .links ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .links ul li{
+    list-style: none;
+}
+footer .links ul li a{
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(115, 115, 115);
+}
+footer .links .copyright{
+    position: relative;
+    top: 10px;
+    width: 280px;
+    height: auto;
+}
+footer .links .copyright span {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer .links .copyright span::after{
+    position: relative;
+    left: 15px;
+    content: '© 2023 Instagram from Meta';
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

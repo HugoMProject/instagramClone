@@ -1,3 +1,5 @@
+<body>
+    <div  class="alert"></div>
 <div class="contains">
     <div class="banner">
         <div class="bannerSon phonewhite">
@@ -13,28 +15,60 @@
         <form action="" method="post">
             <h1>Instagram</h1>
             <main>
-                <input type="text" name="username" id="username" placeholder="Phone,Username/Email">
-                <input type="password" name="" id="password" placeholder="password">
-                <button type="submit">Login</button>
+                <label>
+                    <span class="username">Phone,Username/Email</span>
+                    <input class="input" aria-label="Phone,Username/Email" type="text" name="username" id="username" required >
+                </label>
+                <label>
+                    <span class="password">password</span>
+                    <input class="input1" type="password" name="" id="password" required >
+                </label>
+                <button type="submit" disabled>Log in</button>
                 <span class="lineleft"></span><span class="lineright"></span>
 
             </main>
             <div class="links">
-                <div class="divfacebook"><a href="">Iniciar sesion con Facebook</a></div>
-                <a href="#">Did you forget your password?</a>
+                <div class="divfacebook"><img src="../../../assets/foto-facebooklogo.png" alt=""><a href="">Log in with Facebook</a></div>
+                <a class="forgotPassword" href="#">Forgot password?</a>
                 
             </div>
           
         </form>
-        <div class="register"><span>You do not have an account?</span><a href="#">Register</a></div>
+        <div class="register"><span>Don't have an account?</span><a href="#">Sign up</a></div>
         <div class="app">
-            <h4>Descarga la aplicacion</h4>
+            <h4>Get the app.</h4>
+            <div class="box">
             <div class="downloand">
-                <a href=""><img src="" alt="google play"></a>
+                <a href=""><img src="../../../assets/foto-googleplay.png" alt="google play"></a>
             </div>
             <div class="downloand">
-                <a href=""><img src="" alt="microsoft"></a>
+                <a href=""><img src="../../../assets/foto-microsoft.png" alt="microsoft"></a>
             </div>
         </div>
+        </div>
     </div>
+
 </div>
+<footer>
+    <div class="links">
+        <ul>
+            <li><a href="">Meta</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">API</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Top Accounts</a></li>
+            <li><a href="">Locations</a></li>
+            <li><a href="">Instagram Lite</a></li>
+            <li><a href="">Contact Uploading & Non-Users</a></li>
+            <li><a href="">Meta Verified</a></li>
+        </ul>
+        <div class="copyright">
+            <span>English</span>
+        </div>
+    </div>
+</footer>
+</body>
