@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+/******************************************** desktop version *****************************************/
+@media screen and (min-width:800px) {
+    
 .contains{
     position: relative;
     width: 100%;
@@ -391,4 +394,578 @@ footer .links .copyright span::after{
     color: rgb(115, 115, 115);
     font-size: 12px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+}
+/******************************************** tablet version ********************************************/
+@media (max-width:799px) and (min-width:401px) {
+   body{
+    display: grid;
+    place-items: center;
+   } 
+.contains{
+    position: relative;
+    top: 30px;
+    width: auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.banner{
+    display: none;
+}
+ 
+/******************************* seccion del formulario ********************************************/
+.containsForm{
+    position: relative;
+    width: 100%;
+}
+.containsForm form{
+    border: 1.5px solid rgb(227, 231, 231);
+    padding: 5px ;
+    position: relative;
+    top: 15%;
+    width: 350px;
+    height: 390px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.containsForm form h1{
+    position: relative;
+    top: 35px;
+    font-family: 'Billabong', sans-serif;                                             
+    font-size: 60px;
+    text-align: center;
+}
+.containsForm form main{
+    margin: 0;
+    position: relative;
+    top: 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label{
+    width: max-content;
+}
+.containsForm form main .username{
+    position: absolute;
+    color: rgb(115, 115, 115);
+    margin: 0;
+    top: 10px;
+    left: 5px;
+    z-index: 1;
+    display: block;
+    width: 260px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.containsForm form main label:focus-within .username{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    transition: 0.2s;
+    font-size: 10px;
+}
+
+.containsForm form main .password{
+    position: absolute;
+    color: rgb(115, 115, 115);
+    top: 53px;
+    left: 5px;
+    z-index: 1;
+    display: block;
+    width: 260px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.containsForm form main label:focus-within .password{
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    transition: 0.2s;
+    font-size: 10px;
+}
+.containsForm form main label input{
+    padding-left: 2px;
+    position: relative;
+    width: 268px;
+    height: 38px;
+    border-radius: 2px;
+    border: 1.5px solid rgb(227, 231, 231);
+    background-color: #fafafa;
+}
+.containsForm form main label input:focus{
+    outline: none;
+    border: 1.5px solid rgb(115,115,115);
+}
+.containsForm form main button{
+    color: rgb(253, 254, 254);
+    font-size: 15px;
+    font-weight: 500;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: 8px;
+    width: 270px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(0, 175, 255);
+    border: 1px solid transparent;
+}
+.containsForm form main .lineleft{
+    position: relative;
+    left: 0;
+    top: 25.8px;
+    width: 40%;
+    height: 1px;
+    background-color: rgb(227, 231, 231);
+}
+
+.containsForm form main .lineright{
+    position: relative;
+    top: 20px;
+    right: -60%;
+    width: 40%;
+    height: 1px;
+    background-color: rgb(227, 231, 231);
+}
+.containsForm form main .lineright::before{
+    content: 'OR';
+    position: absolute;
+    left: -33%;
+    bottom: -10px;
+    color: rgb(115, 115, 115);
+}
+.containsForm form .links{
+    position: relative;
+    top: 35px;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+a{
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.containsForm form .links .forgotPassword{
+    font-size: 11px;
+}
+.containsForm form .links .divfacebook{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.containsForm form .links a{
+    font-weight: 500;
+    color: #385185;
+}
+.containsForm .register{
+    position: relative;
+    top: 5px;
+    width: 350px;
+    padding: 5px;
+    height: 50px;
+    border: 1.5px solid rgb(227, 231, 231);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.containsForm .register span{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.containsForm .register a {
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.containsForm .app{
+    position: relative;
+    top: 20px;
+    width: 320px;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+.containsForm .app h4{
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.containsForm .app .box{
+    width: 250;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+.containsForm .app .box .downloand{
+    position: relative;
+    left: 15%;
+    display: flex;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 65px;
+}
+footer .links{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .links ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .links ul li{
+    list-style: none;
+}
+footer .links ul li a{
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(115, 115, 115);
+}
+footer .links .copyright{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    width: max-content;
+    height: auto;
+}
+footer .links .copyright span {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer .links .copyright span::after{
+    position: relative;
+    left: 15px;
+    content: '© 2023 Instagram from Meta';
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+}
+/********************************************mobile version ********************************************/
+@media (max-width:400px) {
+    body{
+        display: grid;
+        place-items: center;
+       } 
+    .contains{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    gap: 1px;
+}
+.banner{
+display: none;
+}
+ 
+
+/******************************* seccion del formulario ********************************************/
+.containsForm{
+    position: relative;
+    width: 100%;
+}
+.containsForm form{
+    position: relative;
+    top: 6%;
+    width: 100%;
+    height: 390px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.containsForm form h1{
+    position: relative;
+    top: 35px;
+    font-family: 'Billabong', sans-serif;                                             
+    font-size: 60px;
+    text-align: center;
+}
+.containsForm form main{
+    margin: 0;
+    position: relative;
+    top: 25px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label{
+    width: max-content;
+}
+.containsForm form main .username{
+    position: absolute;
+    color: rgb(115, 115, 115);
+    margin: 0;
+    top: 10px;
+    left: 5px;
+    z-index: 1;
+    display: block;
+    width: 260px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.containsForm form main label:focus-within .username{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    transition: 0.2s;
+    font-size: 10px;
+}
+
+.containsForm form main .password{
+    position: absolute;
+    color: rgb(115, 115, 115);
+    top: 53px;
+    left: 5px;
+    z-index: 1;
+    display: block;
+    width: 260px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.containsForm form main label:focus-within .password{
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    transition: 0.2s;
+    font-size: 10px;
+}
+.containsForm form main label input{
+    padding-left: 2px;
+    position: relative;
+    width: 268px;
+    height: 38px;
+    border-radius: 2px;
+    border: 1.5px solid rgb(227, 231, 231);
+    background-color: #fafafa;
+}
+.containsForm form main label input:focus{
+    outline: none;
+    border: 1.5px solid rgb(115,115,115);
+}
+.containsForm form main button{
+    color: rgb(253, 254, 254);
+    font-size: 15px;
+    font-weight: 500;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: 8px;
+    width: 270px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(0, 175, 255);
+    border: 1px solid transparent;
+}
+.containsForm form main .lineleft{
+    position: relative;
+    left: 0;
+    top: 25.8px;
+    width: 40%;
+    height: 1px;
+    background-color: rgb(227, 231, 231);
+}
+
+.containsForm form main .lineright{
+    position: relative;
+    top: 20px;
+    right: -60%;
+    width: 40%;
+    height: 1px;
+    background-color: rgb(227, 231, 231);
+}
+.containsForm form main .lineright::before{
+    content: 'OR';
+    position: absolute;
+    left: -33%;
+    bottom: -10px;
+    color: rgb(115, 115, 115);
+}
+.containsForm form .links{
+    padding: 0;
+    position: relative;
+    top: 5px;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+a{
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.containsForm form .links .forgotPassword{
+    font-size: 11px;
+}
+.containsForm form .links .divfacebook{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.containsForm form .links a{
+    font-weight: 500;
+    color: #385185;
+}
+.containsForm .register{
+    position: relative;
+    top: 5px;
+    width: 95vw;
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.containsForm .register span{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.containsForm .register a {
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.containsForm .app{
+    position: relative;
+    top: 10px;
+    width: 320px;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+.containsForm .app h4{
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.containsForm .app .box{
+    width: auto;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+.containsForm .app .box .downloand{
+    position: relative;
+    left: 15%;
+    display: flex;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 15px;
+}
+footer .links{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .links ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .links ul li{
+    list-style: none;
+}
+footer .links ul li a{
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(115, 115, 115);
+}
+footer .links .copyright{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    width: max-content;
+    height: auto;
+}
+footer .links .copyright span {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer .links .copyright span::after{
+    position: relative;
+    left: 15px;
+    content: '© 2023 Instagram from Meta';
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 }
